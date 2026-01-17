@@ -2,7 +2,7 @@
 
 **A Serverless App that uses AI to "read" your photos.**
 
-LINK:- whttps://d6rq0nk83y8qw.cloudfront.net/
+LINK:- https://d6rq0nk83y8qw.cloudfront.net/
 
 ## 🧐 What is this?
 This is a web app where you upload an image, and **Artificial Intelligence (AI)** automatically tells you what is inside it (like "Cat", "Car", or "Tree"). It also saves the details and sends you an email alert immediately.
