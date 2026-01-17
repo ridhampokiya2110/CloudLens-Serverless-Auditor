@@ -10,7 +10,7 @@ rekognition = boto3.client('rekognition')
 sns = boto3.client('sns')
 
 # --- CONFIGURATION ---
-TABLE_NAME = '/TABLENAME/' 
+TABLE_NAME = 'CloudLens-Image-Data' 
 SNS_TOPIC_ARN = 'arn:aws:sns:ap-south-1:961341543201:CloudLens-Alerts' 
 
 def lambda_handler(event, context):
