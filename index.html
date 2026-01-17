@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudLens - Serverless Auditor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>☁️ CloudLens Dashboard</h1>
+            <p>Serverless AI Audit System | Powered by AWS Rekognition</p>
+        </header>
+
+        <section class="upload-section">
+            <label for="fileInput">Select file to audit:</label>
+            <input type="file" id="fileInput" title="Select a file for serverless audit">
+            <button onclick="uploadFile()">Upload for Audit</button>
+            <p id="uploadStatus"></p>
+        </section>
+
+        <section class="results-section">
+            <h2>Live Audit Logs</h2>
+            <button class="refresh-btn" onclick="fetchLogs()">🔄 Refresh Data</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>File Name</th>
+                        <th>AI Detection (CloudLens)</th>
+                        <th>Upload Time</th>
+                    </tr>
+                </thead>
+                <tbody id="logTableBody">
+                    </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
