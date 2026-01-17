@@ -7,8 +7,8 @@ s3 = boto3.client('s3')
 dynamodb = boto3.resource('dynamodb')
 
 
-BUCKET_NAME = '/BUCKET/'  
-TABLE_NAME = '/TABLE/'
+BUCKET_NAME = 'cloudlens-serverless-auditor'  
+TABLE_NAME = 'CloudLens-Image-Data'
 
 class DecimalEncoder(json.JSONEncoder):
     def default(self, obj):
